@@ -1,0 +1,33 @@
+{
+  "name": "automated-leads-enrichment-skill",
+  "description": "Automated Leads Enrichment Agent Skill. Accepts basic B2B prospect profiles, performs background lookup simulation to append corporate attributes, and drafts highly targeted outreach copy.",
+  "version": "1.0.0",
+  "author": "alphaparkinc",
+  "inputs": {
+    "prospect_name": {
+      "type": "string"
+    },
+    "company_domain": {
+      "type": "string"
+    },
+    "outreach_focus": {
+      "type": "string",
+      "default": "AI agents onboarding automation"
+    }
+  },
+  "outputs": {
+    "enriched_profile": {
+      "type": "object",
+      "properties": {
+        "company_name": { "type": "string" },
+        "estimated_size": { "type": "string" },
+        "industry": { "type": "string" },
+        "key_technologies": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "outreach_email_draft": {
+      "type": "string"
+    }
+  },
+  "prompt": "You are a sales development representative (SDR) agent. Your goal is to gather B2B lead signals for {{company_domain}}, resolve key metadata, and draft a short, personalized outreach email based on the {{outreach_focus}} value."
+}
