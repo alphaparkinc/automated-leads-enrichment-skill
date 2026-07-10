@@ -1,8 +1,8 @@
 {
   "name": "automated-leads-enrichment-skill",
-  "description": "Automated Leads Enrichment Agent Skill. Accepts basic B2B prospect profiles, performs background lookup simulation to append corporate attributes, and drafts highly targeted outreach copy.",
+  "description": "GenPark AI Agent Skill - Automated Leads Enrichment Agent Skill. Accepts basic B2B prospect profiles, performs background lookup simulation to append corporate attributes, and drafts highly targeted outreach copy.",
   "version": "1.0.0",
-  "author": "alphaparkinc",
+  "author": "genpark",
   "inputs": {
     "prospect_name": {
       "type": "string"
@@ -19,10 +19,21 @@
     "enriched_profile": {
       "type": "object",
       "properties": {
-        "company_name": { "type": "string" },
-        "estimated_size": { "type": "string" },
-        "industry": { "type": "string" },
-        "key_technologies": { "type": "array", "items": { "type": "string" } }
+        "company_name": {
+          "type": "string"
+        },
+        "estimated_size": {
+          "type": "string"
+        },
+        "industry": {
+          "type": "string"
+        },
+        "key_technologies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "outreach_email_draft": {
