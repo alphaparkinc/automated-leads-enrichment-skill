@@ -1,5 +1,5 @@
 {
-  "name": "automated-leads-enrichment-skill",
+  "name": "genpark-automated-leads-enrichment-skill",
   "description": "GenPark AI Agent Skill - Automated Leads Enrichment Agent Skill. Accepts basic B2B prospect profiles, performs background lookup simulation to append corporate attributes, and drafts highly targeted outreach copy.",
   "version": "1.0.0",
   "author": "genpark",
