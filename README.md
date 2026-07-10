@@ -1,4 +1,4 @@
-# automated-leads-enrichment-skill
+# genpark-automated-leads-enrichment-skill
 
 > **GenPark AI Agent Skill** -- # Automated Leads Enrichment Agent Skill
 
